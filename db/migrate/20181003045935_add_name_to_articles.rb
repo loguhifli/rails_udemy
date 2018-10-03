@@ -1,6 +1,6 @@
-class AddNameToArticles < ActiveRecord::Migration[5.2]
+class AddNameToArticle < ActiveRecord::Migration[5.2]
   def change
-    add_column:articles, :name, :string
+    rename_table :article, :articles
   end
   
 end
