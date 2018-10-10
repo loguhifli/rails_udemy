@@ -1,8 +1,13 @@
 <h1>Article showing</h1>
 
 
-    <p>
-Title: <%= @article.title %>
+<p>
+    Title: <%= @article.title %>
 </p>
-<p>Description: <%= @article.description %></p>
+<p>
+    Description: <%= @article.description %>
+</p>
+<p>
+    User_id: <%= @article.user_id %>
+</p>
 <%= link_to "Back to list page", articles_path %>

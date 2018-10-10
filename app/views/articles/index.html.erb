@@ -4,6 +4,7 @@
 <tr>
 <th>Titles</th>
 <th>Description</th>
+<th>UserId</th>
 <th>Edit</th>
 <th>Show</th>
 <th>Delete</th>
@@ -12,7 +13,7 @@
 <tr>
 <td><%= article.title %></td>
 <td><%= article.description %></td>
-
+<td><%= article.user_id %></td>
 <td><%= link_to "Edit", edit_article_path(article) %></td>
 <td><%= link_to "Show", article_path(article) %></td>
 <td><%= link_to "Delete", article_path(article), method: :delete, data:{confirm: "Are you Sure to delete? "} %></td>

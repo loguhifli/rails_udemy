@@ -10,11 +10,12 @@
   </head>
 
   <body>
-  <% flash.each do |name, msg| %>
-    <ul>
-    <li style="color:green"><b><%= msg %> </li></b>
-    </ul>
-    <% end %>
+ <%= render 'layouts/messages' %>
+ <%= render 'layouts/navbar' %>
+ <div class="jumbotron">
     <%= yield %>
+    </div>
+
+    <%= render 'layouts/footer' %>
   </body>
 </html>
